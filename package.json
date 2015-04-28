@@ -1,0 +1,31 @@
+{
+  "name": "scheduleservice",
+  "version": "0.0.1",
+  "description": "schedule microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lecle/scheduleservice.git"
+  },
+  "keywords": [
+    "microservice,noserv,schedule"
+  ],
+  "author": "Daesun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lecle/scheduleservice/issues"
+  },
+  "homepage": "https://github.com/lecle/scheduleservice",
+  "dependencies": {
+    "assert": "~1.2.0",
+    "date-utils": "^1.2.16",
+    "istanbul": "^0.3.5",
+    "lodash": "^3.1.0",
+    "mocha": "~2.0.1"
+  }
+}
